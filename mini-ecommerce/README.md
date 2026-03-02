@@ -2,6 +2,8 @@
 
 A production-quality mini e-commerce frontend built with Next.js 14+, TypeScript, Tailwind CSS, and Redux Toolkit.
 
+🌐 **Live Demo:** [https://ecommerce.mypgmanager.com/](https://ecommerce.mypgmanager.com/)
+
 ![Next.js](https://img.shields.io/badge/Next.js-14.1.0-black?style=flat-square&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue?style=flat-square&logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=flat-square&logo=tailwind-css)

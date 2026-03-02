@@ -44,7 +44,7 @@ export const FilterSidebar = memo(function FilterSidebar({
       )}
 
       {/* Categories Filter */}
-      <FilterSection title="Categories" defaultOpen>
+      <FilterSection title="Categories">
         <div className="space-y-2">
           {categories.map((category) => (
             <label
@@ -67,7 +67,7 @@ export const FilterSidebar = memo(function FilterSidebar({
 
       {/* Brands Filter */}
       {brands.length > 0 && (
-        <FilterSection title="Brands" defaultOpen>
+        <FilterSection title="Brands">
           <div className="max-h-48 space-y-2 overflow-y-auto custom-scrollbar">
             {brands.map((brand) => (
               <label
@@ -88,7 +88,7 @@ export const FilterSidebar = memo(function FilterSidebar({
       )}
 
       {/* Price Range Filter */}
-      <FilterSection title="Price Range" defaultOpen>
+      <FilterSection title="Price Range">
         <PriceRangeFilter
           value={priceRange}
           onChange={updatePriceRange}
@@ -96,7 +96,7 @@ export const FilterSidebar = memo(function FilterSidebar({
       </FilterSection>
 
       {/* Rating Filter */}
-      <FilterSection title="Rating" defaultOpen>
+      <FilterSection title="Rating">
         <div className="space-y-2">
           {RATING_OPTIONS.map((option) => (
             <label
