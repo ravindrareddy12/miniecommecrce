@@ -166,12 +166,15 @@ export function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Backdrop */}
-      <div className="overlay" aria-hidden="true" />
+      <div 
+        className="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300" 
+        aria-hidden="true" 
+      />
 
       {/* Modal */}
       <div
         ref={modalRef}
-        className="relative z-50 w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-xl bg-white shadow-xl animate-fade-in"
+        className="relative z-50 w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl bg-white shadow-2xl animate-scale-in"
         role="dialog"
         aria-modal="true"
         aria-labelledby="checkout-title"
@@ -180,7 +183,7 @@ export function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
         {!isSubmitting && (
           <button
             onClick={handleClose}
-            className="absolute right-4 top-4 rounded-full p-1 text-gray-400 hover:bg-gray-100 hover:text-gray-600"
+            className="absolute right-4 top-4 rounded-full p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-600 transition-all duration-200 hover:rotate-90"
             aria-label="Close checkout"
           >
             <X className="h-5 w-5" />
@@ -197,7 +200,7 @@ export function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
           </h2>
 
           {/* Order Summary */}
-          <div className="mb-6 rounded-lg bg-gray-50 p-4">
+          <div className="mb-6 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 p-4 border border-gray-200">
             <div className="flex justify-between text-sm">
               <span className="text-gray-600">
                 {itemsCount} {itemsCount === 1 ? 'item' : 'items'}

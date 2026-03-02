@@ -184,9 +184,14 @@ export function ProductListingClient({
         <div className="flex-1">
           {paginatedProducts.length > 0 ? (
             <>
-              <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
-                {paginatedProducts.map((product) => (
-                  <ProductCard key={product.id} product={product} />
+              <div className="grid grid-cols-2 gap-4 md:grid-cols-3 animate-stagger">
+                {paginatedProducts.map((product, index) => (
+                  <div
+                    key={product.id}
+                    style={{ animationDelay: `${index * 0.05}s` }}
+                  >
+                    <ProductCard product={product} />
+                  </div>
                 ))}
               </div>
 
@@ -201,7 +206,7 @@ export function ProductListingClient({
               )}
             </>
           ) : (
-            <div className="flex flex-col items-center justify-center py-16 text-center">
+            <div className="flex flex-col items-center justify-center py-16 text-center animate-fade-in">
               <div className="mb-4 rounded-full bg-gray-100 p-4">
                 <Search className="h-8 w-8 text-gray-400" />
               </div>

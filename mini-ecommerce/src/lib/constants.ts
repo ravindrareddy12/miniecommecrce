@@ -84,11 +84,7 @@ export const NAV_LINKS = [
 
 // Featured Categories (for home page)
 export const FEATURED_CATEGORIES = [
-  {
-    name: 'Smartphones',
-    slug: 'smartphones',
-    image: 'https://cdn.dummyjson.com/products/images/smartphones/iPhone%205s/1.png',
-  },
+  
   {
     name: 'Laptops',
     slug: 'laptops',
@@ -102,7 +98,7 @@ export const FEATURED_CATEGORIES = [
   {
     name: 'Skincare',
     slug: 'skincare',
-    image: 'https://cdn.dummyjson.com/products/images/skin-care/Essence%20Mascara%20Lash%20Princess/1.png',
+    image: 'https://wildrisingskincare.com/cdn/shop/articles/multiple-product-flat-lay.jpg?v=1698430203',
   },
   {
     name: 'Groceries',
@@ -114,6 +110,11 @@ export const FEATURED_CATEGORIES = [
     slug: 'furniture',
     image: 'https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Bed/1.png',
   },
+  {
+    name: 'Smartphones',
+    slug: 'smartphones',
+    image: 'https://cdn.dummyjson.com/products/images/smartphones/iPhone%205s/1.png',
+  }
 ] as const;
 
 // Hero Slides
